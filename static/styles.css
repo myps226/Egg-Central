@@ -1,0 +1,175 @@
+/* ===== Base Styles ===== */
+body {
+    background-color: #fff;
+    color: #212529;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #FFC300;
+    color: #fff;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* ===== Navbar ===== */
+.custom-egg-navbar {
+    background: linear-gradient(90deg, #ffe066, #ffd43b);
+    padding: 1rem 2rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-egg-navbar .nav-link {
+    font-weight: 500;
+    color: #4a2f00 !important;
+    transition: background-color 0.3s ease;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+}
+
+.custom-egg-navbar .nav-link:hover {
+    background-color: #fff3bf;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+    position: relative;
+    background-image: url('https://m.media-amazon.com/images/I/81vZv7ZDjYL.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    z-index: 0;
+}
+
+.hero-section>* {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .btn-warning:hover {
+    background-color: #e0a800cc;
+    color: #212529;
+}
+
+/* ===== Main Section ===== */
+main {
+    background-color: #fff;
+    color: #020202;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+}
+
+/* ===== Nutrition Fact Cards ===== */
+#icon-grid .col>div {
+    background-color: #FFF9C4;
+    color: #212529;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-text ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text ul ul {
+    list-style: circle;
+    margin-left: 1rem;
+}
+
+/* ===== Cards Hover Effect ===== */
+.card:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Timer Page Specific ===== */
+#timer-page .egg-bg {
+    background-color: #fffbe6;
+    padding: 4rem 1rem;
+}
+
+.timer-container .card {
+    background-color: #FFC300;
+    border: none;
+    color: #212529;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.timer-container .card:hover {
+    background-color: #ffdb4d;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.timer-container .card-title {
+    font-weight: bold;
+}
+
+.timer-container .card-text {
+    margin-bottom: 0;
+}
+
+/* ===== Timer Animation ===== */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+/* ===== Footer (optional) ===== */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+}
